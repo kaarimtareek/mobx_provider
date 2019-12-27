@@ -8,8 +8,8 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
-  flutter:
-    sdk: flutter
+  flutter: 
+    sdk: flutter 
   mobx: ^0.3.10
   flutter_mobx: ^0.3.4+2
 
