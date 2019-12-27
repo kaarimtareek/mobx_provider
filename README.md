@@ -65,4 +65,5 @@ class CounterWidget extends StatelessWidget {
 - it contains `initFunction` that's called in `initState` if you wanted to run some code when the widget is rendered for the first time
 - it'll call the dispose function when the widget it removed from the widget tree.
 
+if you have any suggestions or improvments please let me know .
  
