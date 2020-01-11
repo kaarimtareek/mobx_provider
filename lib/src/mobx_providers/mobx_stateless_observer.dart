@@ -10,13 +10,13 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 ///ITS STORE, the store should be SINGLETON and be binded with the widget by injector service
 ///like provider , get_it ,etc
 /// this package is inspired from [Filled Stacks] package [view model provider]
-class MobxStatelessProvider<T extends MobxBase>
+class MobxStatelessObserver<T extends MobxBase>
     extends StatelessObserverWidget {
   final T store;
 
   final Widget Function(BuildContext context, T store) builder;
 
-  MobxStatelessProvider({
+  MobxStatelessObserver({
     ///the name of your widget , that's used for debuging purposes only
     ///it's the same as the name parameter in the [observer] widget
     String name,
