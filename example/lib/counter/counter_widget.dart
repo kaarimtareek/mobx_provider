@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mobx_provider/mobx_provider.dart';
-import 'package:mobx_provider/src/mobx_providers/mobx_widget_provider.dart';
-
 import 'counter_store.dart';
 
 class CounterWidget extends StatelessWidget {

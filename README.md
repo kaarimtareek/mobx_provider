@@ -9,6 +9,12 @@ the package is inspired by filled stacks pattern [view model provider].
 NOTE : if you are not familiar with [Mobx](https://pub.dev/packages/mobx), take a look 
 on it to see how you can use this package.
 
+## what's new in version 0.0.3
+
+- The packages now depends on the latest versions of [mobx],[flutter_mobx],[provider] *see the change log for thier versions*
+- Fix MobxStatefulProvider exception on dispose , Thanks to [wbemanuel](https://github.com/wbemanuel)
+- change [Provider.of(context)] to [Context.read()]
+
 **Breaking Changes**
 - in older versions  (before 0.0.2) `MobxStatefulProvider` now changed to `MobxStatefulObserver` and 
 `MobxStatelessProvider` now changed to `MobxStatelessObserver` with the same functionalities

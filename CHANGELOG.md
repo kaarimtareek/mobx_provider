@@ -1,3 +1,7 @@
+## [0.0.3+1]
+* made some minor modification in example to ahcieve the standards of dartfmt
+* update readme file
+
 ## [0.0.3]
 * update depencencies 
 *  Fix MobxStatefulProvider exception on dispose , Thanks to [wbemanuel](https://github.com/wbemanuel)
