@@ -23,16 +23,17 @@ class MobxStatefulProvider<T extends MobxBase> extends StatefulWidget {
 
 class _MobxStatefulProviderState<T extends MobxBase>
     extends State<MobxStatefulProvider<T>> {
+  T _store;
   @override
   void initState() {
-    if (widget.initFunction != null)
-      widget.initFunction(Provider.of<T>(context, listen: false));
     super.initState();
+    _store = Provider.of<T>(context, listen: false);
+    if (widget.initFunction != null) widget.initFunction(_store);
   }
 
   @override
   void dispose() {
-    Provider.of<T>(context).dispose();
+    _store.dispose();
     super.dispose();
   }
 
