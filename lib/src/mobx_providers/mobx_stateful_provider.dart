@@ -27,7 +27,7 @@ class _MobxStatefulProviderState<T extends MobxBase>
   @override
   void initState() {
     super.initState();
-    _store = Provider.of<T>(context, listen: false);
+    _store = context.read<T>();
     if (widget.initFunction != null) widget.initFunction(_store);
   }
 
@@ -39,5 +39,5 @@ class _MobxStatefulProviderState<T extends MobxBase>
 
   @override
   Widget build(BuildContext context) =>
-      widget.builder(context, Provider.of<T>(context));
+      widget.builder(context, context.read()<T>());
 }

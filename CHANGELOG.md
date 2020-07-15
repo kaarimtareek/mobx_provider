@@ -1,3 +1,9 @@
+## [0.0.3]
+* update depencencies 
+*  Fix MobxStatefulProvider exception on dispose , Thanks to [wbemanuel](https://github.com/wbemanuel)
+* change from [Provider.of(context)] to [Context.read()] and [Context.watch()] 
+* now the package depends on the latest version of [mobx] [1.2.1+1],[flutter_mobx] [1.1.0+1] and [provider] [4.3.1]
+
 ## [0.0.2+1]
 * updated dependencies 
 

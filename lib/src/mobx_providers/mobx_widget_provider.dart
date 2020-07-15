@@ -12,6 +12,5 @@ class MobxWidgetProvider<T extends MobxBase> extends StatelessObserverWidget {
     @required this.builder,
   });
   @override
-  Widget build(BuildContext context) =>
-      builder(context, Provider.of<T>(context));
+  Widget build(BuildContext context) => builder(context, context.read()<T>());
 }
