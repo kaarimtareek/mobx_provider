@@ -1,3 +1,6 @@
+## [0.0.4]
+* Fix context.read exception in providers
+
 ## [0.0.3+1]
 * made some minor modification in example to ahcieve the standards of dartfmt
 * update readme file
