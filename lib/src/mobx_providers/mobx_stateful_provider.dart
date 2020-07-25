@@ -39,5 +39,5 @@ class _MobxStatefulProviderState<T extends MobxBase>
 
   @override
   Widget build(BuildContext context) =>
-      widget.builder(context, context.read()<T>());
+      widget.builder(context, context.select((T store) => store));
 }
